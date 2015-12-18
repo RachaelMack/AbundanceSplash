@@ -1,0 +1,128 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	background: url(images/boxgarden.jpg) no-repeat;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+ h1, h2 {
+ 	font-family:'montserrat', sans-serif;
+ 	margin: 0;
+ 	font-weight: normal;
+ }
+
+h1 {
+  font-size: 75px; 
+  }
+
+  p {
+  font-size: 18px;
+  line-height: 1.5; /* adjusts space between the lines */
+}
+
+ header, section, footer {
+  padding: 100px 150px;
+}
+
+
+strong, a {
+	color: #98C0A0;
+}
+ nav,
+ header {
+ 	background: #318241;
+ }
+ nav{
+ 	text-align: right;
+ 	position: fixed;
+ 	width:100%;
+ }
+nav a { 
+	
+	padding:15px; /*This is for pading around my link*/
+	margin :10px;  /*This is for margin around my link*/
+	display: inline-block;  /*this is so that my link understand padding*/
+	text-transform: uppercase;
+	text-decoration: none;
+
+}
+nav a:hover {
+  background: #823172;
+  color: white;
+  border-radius: 4px; /* adds rounded corners */
+}
+header h1 {
+  font-size: 80px;
+}
+header h2 {
+  font-size: 32px;
+}
+.about {
+  overflow: hidden; 
+  background: rgba(244,244,244,0.8);
+  }	
+
+.profile-img {
+  height: 400px;
+  float:right;
+  left margin: 20px;
+  border-radius: 50%;
+  
+}
+.about img,
+.features img { 
+	border-radius:50%;
+  padding-bottom: 15px;
+}
+.features {
+  background: #823172;  
+}
+
+.features a {
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+}
+
+footer {
+  background: rgba(244,244,244,0.8);
+}
+
+
+footer a { 
+  
+  padding:15px; /*This is for pading around my link*/
+  margin :10px;  /*This is for margin around my link*/
+  display: inline-block;  /*this is so that my link understand padding*/
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #318241;
+  color: white;
+  border-radius: 4px;
+}
+
+footer a:hover {
+  background: #823172;
+  color: white;
+  border-radius: 4px; /* adds rounded corners */
+}
